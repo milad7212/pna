@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
+import Information from "../components/Information";
+import Roles from "../components/Roles";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="py-28">
       {/* top header */}
 
       {/* header */}
@@ -15,8 +17,10 @@ export default function Home() {
       <About />
 
       {/* information */}
+      <Information />
 
       {/* roles */}
+      <Roles />
 
       {/* history */}
 
