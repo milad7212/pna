@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="max-w-6xl mx-auto rounded-xl shadow-lg  p-4 text-justify bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="max-w-6xl mx-auto rounded-xl shadow-2xl mt-4  p-4 text-justify backdrop-blur-sm">
       <p className="text-white font-bold text-2xl mt-2 mb-4  ">درباره رویداد</p>
-      <p className="text-white leading-loose font-bold">
+      <p className="text-white leading-loose font-bold ">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
