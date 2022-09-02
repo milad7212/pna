@@ -16,7 +16,7 @@ export default function Home() {
       {/* header */}
 
       {/* hero slider */}
-    <div className="bg-[url('/backgrand.svg')] bg-contain  16334C">
+    <div className="bg-[url('/backgrand.svg')] bg-cover  ">
       <HeroSlider/>
 
       {/* about */}

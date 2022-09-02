@@ -2,7 +2,9 @@ import React from "react";
 
 function Information() {
   return (
-    <div className="max-w-6xl mx-auto grid grid-cols-1 gap-y-4 gap-x-1 md:grid-cols-2 my-28">
+    <div className="max-w-6xl mx-auto px-3
+     ">
+       <div className="grid grid-cols-1 gap-y-4 gap-x-1 md:grid-cols-2 my-28">
       <div className=" py-12 p-8 relative rounded-xl shadow-xl">
         <div className="bg-red-300 shadow-md rounded-md py-2 px-4 absolute -top-5">
           زمان برگزاری
@@ -29,6 +31,7 @@ function Information() {
           درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با
           نرم افزارها شناخت بیشتری را برای طراحان
         </p>
+      </div>
       </div>
     </div>
   );
