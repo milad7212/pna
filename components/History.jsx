@@ -3,7 +3,7 @@ import React from "react";
 
 function History() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 px-3">
       <div
         className="flex gap-2  items-center justify-center
       "

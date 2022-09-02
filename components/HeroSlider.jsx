@@ -1,8 +1,25 @@
 import React from "react";
+import { motion } from "framer-motion"
+const imageAnimat={
+  offscreen:{opacity:0 ,y:-100},
+  onscreen:{opacity:1,y:0, transition:{
+    type:'spring',
+    bounce:.4,
+    duration:3
+  }},
+ 
+}
 
 function HeroSlider() {
   return (
-    <header className="relative  flex  md:h-screen  overflow-hidden">
+    <motion.header
+    initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{once:false,amount:.1}}
+    transition={{staggerChildren:.5}}
+    variants={imageAnimat}
+    
+    className="relative  flex  md:h-screen  overflow-hidden">
       <video autoPlay loop muted className="absolute  w-full  ">
         <source src="/video.mp4" type="video/mp4" />
       </video>
@@ -25,7 +42,7 @@ function HeroSlider() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
 

@@ -11,6 +11,7 @@ function Roles() {
           </p>
         </div>
       </div>
+
       <Item />
       <Item revers />
       <Item />
@@ -22,9 +23,9 @@ export default Roles;
 
 function Item({ revers }) {
   return (
-    <div className="my-16 grid grid-cols-1 gap-2 md:grid-cols-2">
+    <div className="my-16 px-3  grid grid-cols-1 gap-2 md:grid-cols-2">
       {revers && (
-        <div className="relative block">
+        <div className="relative block row-start-1">
           <Image
             src="/img.jpg"
             layout="responsive"
@@ -38,7 +39,7 @@ function Item({ revers }) {
         <p className=" text-amber-900 text-xl mb-6 font-bold">
           نرم افزار موبایل
         </p>
-        <p className="leading-loose">
+        <p className="md:leading-loose text-justify">
           لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
           بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
           گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و
@@ -47,18 +48,14 @@ function Item({ revers }) {
           طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی
           استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه
           طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
-          می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی
-          که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را
-          ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با
-          استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا
-          مرحله طراحی و صفحه‌بندی را به پایان برند.
+          می‌رسد ه‌است.
         </p>
-        <button className="bg-blue-800 shadow-md   py-2 px-4  mt-auto mr-auto ml-3 rounded-md text-blue-300">
+        <button className="bg-blue-800 shadow-md   py-2 px-4 mt-3  md:mt-auto mr-auto ml-3 rounded-md text-blue-300">
           اطلاعات بیشتر
         </button>
       </div>
       {!revers && (
-        <div className="relative block">
+        <div className="relative block row-start-1">
           <Image
             src="/img.jpg"
             layout="responsive"

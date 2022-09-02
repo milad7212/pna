@@ -3,7 +3,8 @@ import React from "react";
 
 function Organizer() {
   return (
-    <div className="max-w-7xl mx-auto my-20">
+    <div className="max-w-7xl px-3 mx-auto my-20">
+      <div className="">
       <p className="font-black text-2xl mb-20">برگزار کنندگان </p>
       <div className="flex gap-6">
         <Image src="/icon.png" layout="fixed" height={80} width={80} alt="" />
@@ -19,7 +20,7 @@ function Organizer() {
         صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده
         بعد از اینکه متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و
         اندازه‌بندی‌ها چگونه در نظر گرفته شده‌اس
-      </p>
+      </p></div>
     </div>
   );
 }

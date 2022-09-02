@@ -3,7 +3,8 @@ import React from "react";
 
 function Supporters() {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-3">
+      <div className="">
       <p className="text-xl font-bold mb-6">حامیان این دوره</p>
       <p className="text-justify leading-loose">
         لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
@@ -17,7 +18,7 @@ function Supporters() {
         <Image src="/icon.png" layout="fixed" height={100} width={100} alt="" />
         <Image src="/icon.png" layout="fixed" height={100} width={100} alt="" />
         <Image src="/icon.png" layout="fixed" height={100} width={100} alt="" />
-      </div>
+      </div></div>
     </div>
   );
 }
