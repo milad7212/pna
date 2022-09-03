@@ -48,15 +48,18 @@ function Header() {
               />
             </div>
             <div className="text-white grow">
-              <ul className="flex justify-center">
+              <ul className="justify-center hidden md:flex">
                 {data.map((item, index) => (
-                  <li className="mx-6 font-bold" key={index}>
+                  <li
+                    className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
+                    key={index}
+                  >
                     <Link href="">{item.title}</Link>
                   </li>
                 ))}
               </ul>
             </div>
-            <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md hover:scale-105 active:scale-90 ">
+            <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md whitespace-nowrap hover:scale-105 active:scale-90 ">
               ثبت نام
             </button>
           </div>
