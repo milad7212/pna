@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useMotionValue, useTransform } from "framer-motion";
 
 const imageAnimat = {
   offscreen: { opacity: 0, y: -100 },
