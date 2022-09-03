@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React from "react";
-
 function History() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 px-3">
+    <div className="grid grid-cols-1 px-3 md:grid-cols-2">
       <div
-        className="flex gap-2  items-center justify-center
-      "
+        className="flex items-center justify-center gap-2 "
       >
         <Item />
 
@@ -25,7 +23,7 @@ function History() {
         <div className="flex flex-col max-w-max ">
           <p className="font-bold"> رویداد سراسری تولید محتوای بسیج</p>
 
-          <button className="bg-gray-400 py-2 px-4 shadow-lg rounded-md mr-auto my-4">
+          <button className="px-4 py-2 my-4 mr-auto bg-gray-400 rounded-md shadow-lg">
             دیدن همه
           </button>
         </div>
@@ -39,8 +37,8 @@ export default History;
 function Item() {
   return (
     <>
-      <div className="bg-blue-800 px-2 py-4 rounded-md text-white text-center max-h-min">
-        <p className="my-4 font-bold  text-3xl">1400</p>
+      <div className="px-2 py-4 text-center text-white bg-blue-800 rounded-md max-h-min">
+        <p className="my-4 text-3xl font-bold">1400</p>
         <p className="my-4">سومین دوره مسابقات</p>
         <p className="mt-6 text-xs">(لانه جاسوسی آمریکا)</p>
       </div>

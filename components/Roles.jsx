@@ -1,12 +1,25 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import React from "react";
+const imageAnimat = {
+  offscreen: { opacity: 0, y: 100 },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
 
+      bounce: 0.4,
+      duration: 3,
+    },
+  },
+};
 function Roles() {
   return (
-    <div className="max-w-7xl mx-auto my-16">
-      <div className="border-t-2 border-indigo-200 relative ">
+    <div className="mx-auto my-16 max-w-7xl">
+      <div className="relative border-t-2 border-indigo-200 ">
         <div className="absolute inset-0 flex justify-center -top-5">
-          <p className="bg-white px-4 text-cyan-600 text-2xl font-bold">
+          <p className="px-4 text-2xl font-bold bg-white text-cyan-600">
             شرایط و قوانین
           </p>
         </div>
@@ -23,9 +36,16 @@ export default Roles;
 
 function Item({ revers }) {
   return (
-    <div className="my-16 px-3  grid grid-cols-1 gap-2 md:grid-cols-2">
+    <motion.div
+      initial={"offscreen"}
+      whileInView={"onscreen"}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ staggerChildren: 0.5 }}
+      variants={imageAnimat}
+      className="grid grid-cols-1 gap-2 px-3 my-16 md:grid-cols-2"
+    >
       {revers && (
-        <div className="relative block row-start-1">
+        <div className="relative block row-start-1 ">
           <Image
             src="/img.jpg"
             layout="responsive"
@@ -36,10 +56,10 @@ function Item({ revers }) {
         </div>
       )}
       <div className="flex flex-col ">
-        <p className=" text-amber-900 text-xl mb-6 font-bold">
+        <p className="mb-6 text-xl font-bold text-amber-900">
           نرم افزار موبایل
         </p>
-        <p className="md:leading-loose text-justify">
+        <p className="text-justify md:leading-loose">
           لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
           بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
           گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و
@@ -50,12 +70,12 @@ function Item({ revers }) {
           طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
           می‌رسد ه‌است.
         </p>
-        <button className="bg-blue-800 shadow-md   py-2 px-4 mt-3  md:mt-auto mr-auto ml-3 rounded-md text-blue-300">
+        <button className="px-4 py-2 mt-3 ml-3 mr-auto text-blue-300 bg-blue-800 rounded-md shadow-md md:mt-auto">
           اطلاعات بیشتر
         </button>
       </div>
       {!revers && (
-        <div className="relative block row-start-1">
+        <div className="relative block ">
           <Image
             src="/img.jpg"
             layout="responsive"
@@ -65,6 +85,6 @@ function Item({ revers }) {
           />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }
