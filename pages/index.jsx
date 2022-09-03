@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeroSlider from "../components/HeroSlider";
 import History from "../components/History";
+import ImageSlide from "../components/ImageSlide";
 import Information from "../components/Information";
 import Organizer from "../components/Organizer";
 import Roles from "../components/Roles";
@@ -59,6 +60,7 @@ export default function Home() {
       <Videos />
 
       {/* images */}
+      <ImageSlide />
 
       {/* footer */}
       <Footer />
