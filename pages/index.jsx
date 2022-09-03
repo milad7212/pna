@@ -9,6 +9,7 @@ import Information from "../components/Information";
 import Organizer from "../components/Organizer";
 import Roles from "../components/Roles";
 import Supporters from "../components/Supporters";
+import Videos from "../components/Videos";
 
 const imageAnimat = {
   offscreen: { opacity: 0 },
@@ -55,6 +56,7 @@ export default function Home() {
       <Supporters />
 
       {/* videos */}
+      <Videos />
 
       {/* images */}
 
