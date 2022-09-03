@@ -28,11 +28,6 @@ const imageAnimat = {
 export default function Home() {
   return (
     <div className="">
-      {/* top header */}
-      <TopHeader />
-      {/* header */}
-      <Header />
-
       {/* hero slider */}
       <div className="bg-[url('/backgrand.svg')] bg-cover md:bg-contain ">
         <HeroSlider />
@@ -62,9 +57,6 @@ export default function Home() {
 
       {/* images */}
       <ImageSlide />
-
-      {/* footer */}
-      <Footer />
     </div>
   );
 }
