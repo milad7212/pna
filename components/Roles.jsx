@@ -44,18 +44,7 @@ function Item({ revers }) {
       variants={imageAnimat}
       className="grid grid-cols-1 gap-2 px-3 my-16 md:grid-cols-2"
     >
-      {revers && (
-        <div className="relative block row-start-1 ">
-          <Image
-            src="/img.jpg"
-            layout="responsive"
-            height={100}
-            width={100}
-            alt=""
-          />
-        </div>
-      )}
-      <div className="flex flex-col ">
+      <div className={`flex flex-col ${revers && "order-1 md:order-2"} `}>
         <p className="mb-6 text-xl font-bold text-amber-900">
           نرم افزار موبایل
         </p>
@@ -70,21 +59,20 @@ function Item({ revers }) {
           طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
           می‌رسد ه‌است.
         </p>
-        <button className="px-4 py-2 mt-3 ml-3 mr-auto text-blue-300 bg-blue-800 rounded-md shadow-md md:mt-auto">
+        <button className="px-4 py-2  my-3 ml-auto mr-auto text-[#22323f] bg-[#b8c8d9] rounded-full shadow-lg md:mt-auto">
           اطلاعات بیشتر
         </button>
       </div>
-      {!revers && (
-        <div className="relative block ">
-          <Image
-            src="/img.jpg"
-            layout="responsive"
-            height={100}
-            width={100}
-            alt=""
-          />
-        </div>
-      )}
+
+      <div s className={`relative block ${revers && "order-2 md:order-1"}`}>
+        <Image
+          src="/img.jpg"
+          layout="responsive"
+          height={100}
+          width={100}
+          alt=""
+        />
+      </div>
     </motion.div>
   );
 }

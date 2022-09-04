@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="">
       {/* hero slider */}
-      <div className="bg-[url('/backgrand.svg')] bg-cover md:bg-contain ">
+      <div className="bg-[url('/backgrand.svg')] bg-no-repeat bg-cover md:bg-contain ">
         <HeroSlider />
 
         {/* about */}
