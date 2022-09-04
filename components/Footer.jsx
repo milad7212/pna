@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="grid px-4 py-6 mt-8 bg-gradient-to-r from-cyan-500 to-blue-500 md:grid-cols-3 ">
+    <div className="grid px-4 py-10 mt-8 bg-[url('/bgfooter.svg')] bg-no-repeat bg-cover md:grid-cols-3 ">
       <div className="flex flex-col justify-between">
         <p>تماس با ما</p>
         <div className="flex">

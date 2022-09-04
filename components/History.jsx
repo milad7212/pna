@@ -3,18 +3,16 @@ import React from "react";
 function History() {
   return (
     <div className="grid grid-cols-1 px-3 md:grid-cols-2">
-      <div
-        className="flex items-center justify-center gap-2 "
-      >
-        <Item />
+      <div className="flex items-center justify-center gap-2 ">
+        <Item color="#ba1a1a" />
 
         <div className="">
-          <Item />
+          <Item color="#0e92d8" />
           <div className="h-2"></div>
-          <Item />
+          <Item color="#19408f" />
         </div>
         <div className="">
-          <Item />
+          <Item color="#5195af" />
         </div>
       </div>
       <div className="">
@@ -34,13 +32,16 @@ function History() {
 
 export default History;
 
-function Item() {
+function Item({ color }) {
   return (
     <>
-      <div className="px-2 py-4 text-center text-white bg-blue-800 rounded-md max-h-min">
-        <p className="my-4 text-3xl font-bold">1400</p>
-        <p className="my-4">سومین دوره مسابقات</p>
-        <p className="mt-6 text-xs">(لانه جاسوسی آمریکا)</p>
+      <div
+        style={{ ...(color && { backgroundColor: color }) }}
+        className={`px-2 py-4 text-center text-white  rounded-md max-h-min`}
+      >
+        <p className="my-4 text-5xl font-black ">1400</p>
+        <p className="my-4 font-bold">سومین دوره مسابقات</p>
+        <p className="mt-6 text-xs font-bold">(لانه جاسوسی آمریکا)</p>
       </div>
     </>
   );
