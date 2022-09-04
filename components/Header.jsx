@@ -34,15 +34,22 @@ const data = [
 
 function Header() {
   return (
-    <div className="bg-[#031B31] py-3 sticky top-0 z-50">
+    <div className="bg-[#031B31] py-2 sticky top-0 z-50">
       <div className="mx-auto max-w-7xl ">
         <div className="px-3 ">
           <div className="flex items-center gap-2">
-            <div className="">
+            <div className="flex items-center justify-center">
               <Image
-                src="/icon.png"
+                src="/logo-roydad.png"
                 layout="fixed"
-                width={50}
+                width={70}
+                height={70}
+                alt=""
+              />
+              <Image
+                src="/logo-roydader.png"
+                layout="fixed"
+                width={100}
                 height={50}
                 alt=""
               />
