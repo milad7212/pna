@@ -34,7 +34,7 @@ const data = [
 
 function Header() {
   return (
-    <div className="bg-[#031B31] py-3">
+    <div className="bg-[#031B31] py-3 sticky top-0 z-50">
       <div className="mx-auto max-w-7xl ">
         <div className="px-3 ">
           <div className="flex items-center gap-2">
