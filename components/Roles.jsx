@@ -25,16 +25,16 @@ function Roles() {
         </div>
       </div>
 
-      <Item />
-      <Item revers />
-      <Item />
+      <Item img="/one.svg" />
+      <Item revers img="/two.svg" />
+      <Item img="/three.svg" />
     </div>
   );
 }
 
 export default Roles;
 
-function Item({ revers }) {
+function Item({ revers, img }) {
   return (
     <motion.div
       initial={"offscreen"}
@@ -65,13 +65,7 @@ function Item({ revers }) {
       </div>
 
       <div s className={`relative block ${revers && "order-2 md:order-1"}`}>
-        <Image
-          src="/img.jpg"
-          layout="responsive"
-          height={100}
-          width={100}
-          alt=""
-        />
+        <Image src={img} layout="responsive" height={100} width={100} alt="" />
       </div>
     </motion.div>
   );
