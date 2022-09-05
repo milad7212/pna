@@ -3,7 +3,7 @@ import React from "react";
 function contact() {
   return (
     <div className="h-screen">
-      <div className="grid grid-cols-1 m-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 m-8 md:grid-cols-2">
         <div className="flex flex-col justify-between">
           <p>تماس با ما</p>
           <p>

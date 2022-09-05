@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="grid px-4 py-10 mt-8 bg-[url('/bgfooter.svg')] bg-no-repeat bg-cover md:grid-cols-3 ">
+    <div className="grid px-4 py-10 relative mt-8 bg-[url('/bgfooter.svg')] bg-no-repeat bg-cover md:grid-cols-3 ">
       <div className="flex flex-col justify-between">
         <p>تماس با ما</p>
         <div className="flex">
@@ -30,9 +30,7 @@ function Footer() {
           <Image src="/icon.png" layout="fixed" width={50} height={50} alt="" />
         </div>
       </div>
-      <div className="flex justify-center">
-        <Image src="/icon.png" layout="fixed" width={200} height={200} alt="" />
-      </div>
+      <div className="flex justify-center"></div>
     </div>
   );
 }
