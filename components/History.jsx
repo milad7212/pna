@@ -2,28 +2,41 @@ import Image from "next/image";
 import React from "react";
 function History() {
   return (
-    <div className="grid grid-cols-1 px-3 md:grid-cols-2">
-      <div className="flex items-center justify-center gap-2 ">
-        <Item color="#ba1a1a" />
-
-        <div className="">
-          <Item color="#0e92d8" />
-          <div className="h-2"></div>
-          <Item color="#19408f" />
-        </div>
-        <div className="">
-          <Item color="#5195af" />
+    <div className="relative">
+      <div className="absolute bottom-0 left-0 -top-24 -right-[500px] lg:-top-80 -z-10">
+        <div className="block ">
+          <Image
+            src="/backHistory.svg"
+            layout="responsive"
+            height={30}
+            width={60}
+            alt="0"
+          />
         </div>
       </div>
-      <div className="">
-        <Image src="/icon.png" layout="fixed" height={50} width={50} alt="" />
-        <p className="font-bold">دوره های پیشین</p>
-        <div className="flex flex-col max-w-max ">
-          <p className="font-bold"> رویداد سراسری تولید محتوای بسیج</p>
+      <div className="grid grid-cols-1 px-3 bg-cover md:grid-cols-2">
+        <div className="flex items-center justify-center gap-2 ">
+          <Item color="#ba1a1a" />
 
-          <button className="px-4 py-2 my-4 mr-auto bg-gray-400 rounded-md shadow-lg">
-            دیدن همه
-          </button>
+          <div className="">
+            <Item color="#0e92d8" />
+            <div className="h-2"></div>
+            <Item color="#19408f" />
+          </div>
+          <div className="">
+            <Item color="#5195af" />
+          </div>
+        </div>
+        <div className="">
+          <Image src="/icon.png" layout="fixed" height={50} width={50} alt="" />
+          <p className="font-bold">دوره های پیشین</p>
+          <div className="flex flex-col max-w-max ">
+            <p className="font-bold"> رویداد سراسری تولید محتوای بسیج</p>
+
+            <button className="px-4 py-2 my-4 mr-auto bg-gray-400 rounded-md shadow-lg">
+              دیدن همه
+            </button>
+          </div>
         </div>
       </div>
     </div>
