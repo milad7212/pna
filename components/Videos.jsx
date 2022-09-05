@@ -3,7 +3,7 @@ import React from "react";
 
 function Videos() {
   return (
-    <div className="px-20 my-8">
+    <div className="px-2 my-8 md:px-20">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div className="">
           <p className="my-8 text-xl font-bold">پخش زنده / کلیپ ها</p>
