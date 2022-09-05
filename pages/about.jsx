@@ -11,7 +11,7 @@ function about() {
         consectetur. Fuga dicta eos debitis dolorum provident tempore architecto
         omnis numquam!
       </p>
-      <div className="flex flex-row-reverse gap-4">
+      <div className="flex flex-row-reverse h-[800px] gap-4">
         <Image src="/icon.png" layout="fixed" height={60} width={60} alt="" />
         <Image src="/icon.png" layout="fixed" height={60} width={60} alt="" />
         <Image src="/icon.png" layout="fixed" height={60} width={60} alt="" />
