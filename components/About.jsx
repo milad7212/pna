@@ -23,7 +23,7 @@ function About() {
       variants={imageAnimat}
       className="max-w-6xl px-3 mx-auto "
     >
-      <div className="p-4 text-justify shadow-2xl rounded-xl md:mt-4 backdrop-blur-md">
+      <div className="p-4 text-justify shadow-2xl rounded-xl md:mt-4 backdrop-blur-2xl">
         <p className="mt-2 mb-4 font-bold text-white md:text-2xl ">
           درباره رویداد
         </p>

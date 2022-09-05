@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { HiMenu } from "react-icons/hi";
 const data = [
   {
     title: "اطلاعات مسابقه",
@@ -37,7 +38,8 @@ function Header() {
     <div className="bg-[#031B31] py-2 sticky top-0 z-50">
       <div className="mx-auto max-w-7xl ">
         <div className="px-3 ">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-between gap-2">
+            <HiMenu size={35} color="#fff" />
             <div className="flex items-center justify-center">
               <Image
                 src="/logo-roydad.png"
@@ -54,8 +56,8 @@ function Header() {
                 alt=""
               />
             </div>
-            <div className="text-white grow">
-              <ul className="justify-center hidden lg:flex">
+            <div className="hidden text-white grow lg:block">
+              <ul className="justify-center lg:flex">
                 {data.map((item, index) => (
                   <li
                     className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
