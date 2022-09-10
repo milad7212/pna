@@ -17,7 +17,7 @@ import "swiper/css/scrollbar";
 import Image from "next/image";
 function ImageSlide() {
   return (
-    <div className="max-w-5xl mx-auto my-8">
+    <div className="max-w-5xl mx-auto my-8 ">
       <Swiper
         modules={[Navigation, Pagination, EffectCoverflow, Scrollbar, A11y]}
         effect="coverflow"
@@ -29,7 +29,7 @@ function ImageSlide() {
           slideShadows: true,
         }}
         grabCursor={true}
-        spaceBetween={50}
+        spaceBetween={1}
         navigation
         pagination={true}
         slidesPerView={3}
@@ -39,8 +39,8 @@ function ImageSlide() {
         <SwiperSlide>
           <Image
             className="rounded-xl"
-            src="/img.jpg"
-            layout="fixed"
+            src="/test.jpg"
+            layout="responsive"
             height={300}
             width={300}
             alt=""
@@ -49,8 +49,8 @@ function ImageSlide() {
         <SwiperSlide>
           <Image
             className="rounded-xl"
-            src="/img.jpg"
-            layout="fixed"
+            src="/test.jpg"
+            layout="responsive"
             height={300}
             width={300}
             alt=""
@@ -59,8 +59,8 @@ function ImageSlide() {
         <SwiperSlide>
           <Image
             className="rounded-xl"
-            src="/img.jpg"
-            layout="fixed"
+            src="/test.jpg"
+            layout="responsive"
             height={300}
             width={300}
             alt=""
@@ -69,8 +69,8 @@ function ImageSlide() {
         <SwiperSlide>
           <Image
             className="rounded-xl"
-            src="/img.jpg"
-            layout="fixed"
+            src="/test.jpg"
+            layout="responsive"
             height={300}
             width={300}
             alt=""
@@ -79,8 +79,8 @@ function ImageSlide() {
         <SwiperSlide>
           <Image
             className="rounded-xl"
-            src="/img.jpg"
-            layout="fixed"
+            src="/test.jpg"
+            layout="responsive"
             height={300}
             width={300}
             alt=""
