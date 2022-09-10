@@ -3,13 +3,15 @@ import React from "react";
 function roles() {
   return (
     <>
-      <div className="px-4 mx-auto my-8 max-w-7xl">
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+      <div className="bg-gradient-to-b from-indigo-200 via-red-200 to-yellow-100">
+        <div className="px-4 py-8 mx-auto max-w-7xl ">
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+        </div>
       </div>
     </>
   );
