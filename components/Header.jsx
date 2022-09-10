@@ -42,7 +42,7 @@ function Header() {
             <div className="block lg:hidden">
               <HiMenu size={35} color="#fff" />
             </div>
-            <div className="left-0 right-0 hidden bg-white top-6">dddddd</div>
+
             <div className="flex items-center justify-center ">
               <Image
                 src="/logo-roydad.png"
@@ -71,7 +71,7 @@ function Header() {
                 ))}
               </ul>
             </div>
-            <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md whitespace-nowrap hover:scale-105 active:scale-90 ">
+            <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md opacity-0 lg:opacity-100 whitespace-nowrap hover:scale-105 active:scale-90 ">
               ثبت نام
             </button>
           </div>
