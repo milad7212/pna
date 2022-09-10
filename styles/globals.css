@@ -48,3 +48,29 @@ a {
         background: black;
     }
 }
+
+.scroll-fix-fix::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.scroll-fix-fix::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.scroll-fix-fix::-webkit-scrollbar-thumb {
+    background: rgb(34, 77, 130);
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(34, 77, 130);
+    border-radius: 8px;
+}
