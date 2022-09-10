@@ -47,10 +47,10 @@ function HeroSlider() {
             ۱ مهرماه تا ۱۵ مهرماه ۱۴۰۰
           </p>
           <div className="flex gap-2 mt-4 mb-8">
-            <button className="px-4 py-2 font-bold text-[#22323f] bg-[#b8c8d9] rounded-full">
+            <button className="px-4 py-2 font-bold text-[#22323f] bg-[#b8c8d9] rounded-md">
               اطلاعات رویداد
             </button>
-            <button className="px-4 py-2 mr-2 font-bold border-2 rounded-full">
+            <button className="px-4 py-2 mr-2 font-bold border-2 rounded-md">
               <div className="flex items-center">
                 <p>پخش زنده</p>
                 <MdOndemandVideo size={20} className="mr-2" />

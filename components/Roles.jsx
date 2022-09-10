@@ -59,7 +59,7 @@ function Item({ revers, img }) {
           طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
           می‌رسد ه‌است.
         </p>
-        <button className="px-4 py-2  my-3 ml-auto mr-auto text-[#22323f] bg-[#b8c8d9] rounded-full shadow-lg md:mt-auto">
+        <button className="px-4 py-2  my-3 ml-auto mr-auto text-[#22323f] bg-[#b8c8d9] rounded-md shadow-lg md:mt-auto">
           اطلاعات بیشتر
         </button>
       </div>
