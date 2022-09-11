@@ -18,8 +18,8 @@ function Layout({ children }) {
       <main>{children}</main>
       <Footer />
       <div className="fixed z-50 left-4 bottom-4 lg:hidden">
-        <div className="bg-white rounded-full shadow-md cursor-pointer active:scale-95">
-          <AiFillPlusCircle size={50} color="#3B82F6" className="" />
+        <div className="flex items-center justify-center w-20 h-20 rounded-3xl bg-[#8eccfd] cursor-pointer active:scale-95">
+          <p className="text-[#07477a] font-bold">ثبت نام</p>
         </div>
       </div>
     </div>
