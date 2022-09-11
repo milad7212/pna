@@ -33,9 +33,13 @@ const data = [
   },
 ];
 
-function Header() {
+function Header({ changeColor }) {
   return (
-    <div className="bg-[#031B31] py-2 sticky top-0 z-50">
+    <div
+      className={`${
+        !changeColor ? "bg-blue-500" : "bg-[#031B31]"
+      } py-2 sticky top-0 z-50`}
+    >
       <div className="mx-auto max-w-7xl ">
         <div className="px-3 ">
           <div className="flex items-center justify-between gap-2">
