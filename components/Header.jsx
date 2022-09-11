@@ -13,7 +13,7 @@ const data = [
   },
   {
     title: "دوره های پیشین",
-    url: "",
+    url: "/last",
   },
   {
     title: "برگزار کنندگان",
@@ -25,11 +25,11 @@ const data = [
   },
   {
     title: "گالری",
-    url: "",
+    url: "/galery",
   },
   {
     title: "کلیپ",
-    url: "",
+    url: "/clips",
   },
 ];
 
@@ -46,23 +46,24 @@ function Header({ changeColor }) {
             <div className="block lg:hidden">
               <HiMenu size={35} color="#fff" />
             </div>
-
-            <div className="flex items-center justify-center ">
-              <Image
-                src="/logo-roydad.png"
-                layout="fixed"
-                width={70}
-                height={70}
-                alt=""
-              />
-              <Image
-                src="/logo-roydader.png"
-                layout="fixed"
-                width={100}
-                height={50}
-                alt=""
-              />
-            </div>
+            <Link href="/">
+              <div className="flex items-center justify-center ">
+                <Image
+                  src="/logo-roydad.png"
+                  layout="fixed"
+                  width={70}
+                  height={70}
+                  alt=""
+                />
+                <Image
+                  src="/logo-roydader.png"
+                  layout="fixed"
+                  width={100}
+                  height={50}
+                  alt=""
+                />
+              </div>
+            </Link>
             <div className="hidden text-white grow lg:block">
               <ul className="justify-center lg:flex">
                 {data.map((item, index) => (
@@ -70,7 +71,7 @@ function Header({ changeColor }) {
                     className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
                     key={index}
                   >
-                    <Link href="">{item.title}</Link>
+                    <Link href={item.url}>{item.title}</Link>
                   </li>
                 ))}
               </ul>
