@@ -47,7 +47,7 @@ function Header({ changeColor }) {
               <HiMenu size={35} color="#fff" />
             </div>
             <Link href="/">
-              <div className="flex items-center justify-center ">
+              <div className="flex items-center justify-center cursor-pointer ">
                 <Image
                   src="/logo-roydad.png"
                   layout="fixed"
