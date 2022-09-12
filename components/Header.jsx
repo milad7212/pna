@@ -36,11 +36,11 @@ const data = [
 const dataMobile = [
   {
     title: "صفحه اصلی",
-    url: "",
+    url: "/",
   },
   {
     title: "اطلاعات رویداد",
-    url: "",
+    url: "/roles",
   },
   {
     title: "پخش زنده",
@@ -68,15 +68,15 @@ const dataMobile = [
   },
   {
     title: "تماس با ما",
-    url: "/clips",
+    url: "/contact",
   },
   {
     title: "درباره ما",
-    url: "/clips",
+    url: "/about",
   },
   {
     title: "FAQ",
-    url: "/clips",
+    url: "",
   },
 ];
 
