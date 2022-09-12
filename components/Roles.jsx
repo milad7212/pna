@@ -21,7 +21,7 @@ function Roles() {
       <div className="relative border-t-2 border-indigo-200 ">
         <div className="absolute inset-0 flex justify-center -top-5">
           <p className="px-4 text-2xl font-bold bg-white text-cyan-600">
-            شرایط و قوانین
+            بخش های رویداد
           </p>
         </div>
       </div>
