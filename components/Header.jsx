@@ -3,6 +3,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { AiFillHome } from "react-icons/ai";
+import { MdPermDeviceInformation, MdLiveTv } from "react-icons/md";
+import { FaRegCalendarCheck, FaPhotoVideo, FaQrcode } from "react-icons/fa";
+import { RiHomeSmileLine } from "react-icons/ri";
+import { AiFillLike, AiFillPhone } from "react-icons/ai";
+import { GrGallery } from "react-icons/gr";
+import { FcAbout } from "react-icons/fc";
 const data = [
   {
     title: "اطلاعات مسابقه",
@@ -37,46 +44,57 @@ const dataMobile = [
   {
     title: "صفحه اصلی",
     url: "/",
+    icon: <AiFillHome size={20} />,
   },
   {
     title: "اطلاعات رویداد",
     url: "/roles",
+    icon: <MdPermDeviceInformation size={20} />,
   },
   {
     title: "پخش زنده",
     url: "",
+    icon: <MdLiveTv size={20} />,
   },
   {
     title: "دوره های پیشین",
     url: "/last",
+    icon: <FaRegCalendarCheck size={20} />,
   },
   {
     title: "برگزار کنندگان",
     url: "",
+    icon: <RiHomeSmileLine size={20} />,
   },
   {
     title: "حامیان",
     url: "",
+    icon: <AiFillLike size={20} />,
   },
   {
     title: "گالری",
     url: "/galery",
+    icon: <GrGallery size={20} />,
   },
   {
     title: "کلیپ ها",
     url: "/clips",
+    icon: <FaPhotoVideo size={20} />,
   },
   {
     title: "تماس با ما",
     url: "/contact",
+    icon: <AiFillPhone size={20} />,
   },
   {
     title: "درباره ما",
     url: "/about",
+    icon: <FcAbout size={20} />,
   },
   {
     title: "FAQ",
     url: "",
+    icon: <FaQrcode size={20} />,
   },
 ];
 
@@ -143,7 +161,7 @@ function Header({ changeColor }) {
       >
         <div className="grid grid-cols-[5fr_2fr]">
           <div className="bg-[#cbe6ff] h-screen">
-            <div className="flex justify-center py-6">
+            <div className="flex justify-center py-6 border-b border-[#1d558a]">
               <Image
                 src="/logo-roydad.png"
                 layout="fixed"
@@ -162,7 +180,11 @@ function Header({ changeColor }) {
                   className="py-4 mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
                   key={index}
                 >
-                  <Link href={item.url}>{item.title}</Link>
+                  <div className="flex items-center">
+                    {item.icon && item.icon}
+
+                    <p className="mt-1 mr-2">{item.title}</p>
+                  </div>
                 </li>
               ))}
             </ul>
