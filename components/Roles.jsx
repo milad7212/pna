@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
+import { useRouter } from "next/router";
 const imageAnimat = {
   offscreen: { opacity: 0, y: 100 },
   onscreen: {
@@ -35,6 +36,7 @@ function Roles() {
 export default Roles;
 
 function Item({ revers, img }) {
+  const route = useRouter();
   return (
     <motion.div
       initial={"offscreen"}
@@ -59,7 +61,12 @@ function Item({ revers, img }) {
           طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
           می‌رسد ه‌است.
         </p>
-        <button className="px-4 py-2  my-3 ml-auto mr-auto text-[#22323f] bg-[#b8c8d9] rounded-md shadow-lg md:mt-auto">
+        <button
+          onClick={() => {
+            route.push("/roles");
+          }}
+          className="px-4 py-2  my-3 ml-auto mr-auto text-[#22323f] bg-[#b8c8d9] rounded-md shadow-lg md:mt-auto"
+        >
           اطلاعات بیشتر
         </button>
       </div>

@@ -33,7 +33,12 @@ function History() {
           <div className="flex flex-col max-w-max ">
             <p className="font-bold"> رویداد سراسری تولید محتوای بسیج</p>
 
-            <button className="px-4 py-2 my-4 mr-auto bg-gray-400 rounded-md shadow-lg">
+            <button
+              onClick={() => {
+                route.push("/last");
+              }}
+              className="px-4 py-2 my-4 mr-auto bg-gray-400 rounded-md shadow-lg"
+            >
               دیدن همه
             </button>
           </div>
