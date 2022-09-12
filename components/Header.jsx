@@ -139,33 +139,36 @@ function Header({ changeColor }) {
 
       {/* menu */}
       <div
-        className={`inset-0 ${
-          showSlideMenu ? "fixed " : "hidden"
-        } bg-[#cbe6ff] z-[100]`}
+        className={`inset-0 ${showSlideMenu ? "fixed " : "hidden"} ]  z-[100]`}
       >
-        <div className="flex justify-center py-6">
-          <Image
-            src="/logo-roydad.png"
-            layout="fixed"
-            width={70}
-            height={70}
-            alt=""
-          />
+        <div className="grid grid-cols-[5fr_2fr]">
+          <div className="bg-[#cbe6ff] h-screen">
+            <div className="flex justify-center py-6">
+              <Image
+                src="/logo-roydad.png"
+                layout="fixed"
+                width={70}
+                height={70}
+                alt=""
+              />
+            </div>
+            <ul className="">
+              {dataMobile.map((item, index) => (
+                <li
+                  onClick={() => {
+                    router.push(item.url);
+                    setShowSlideMenu(false);
+                  }}
+                  className="py-4 mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
+                  key={index}
+                >
+                  <Link href={item.url}>{item.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div onClick={() => setShowSlideMenu(false)}></div>
         </div>
-        <ul className="">
-          {dataMobile.map((item, index) => (
-            <li
-              onClick={() => {
-                router.push(item.url);
-                setShowSlideMenu(false);
-              }}
-              className="py-4 mx-2 text-sm font-bold border-[#036697] border-t border-b lg:text-base lg:mx-6 whitespace-nowrap"
-              key={index}
-            >
-              <Link href={item.url}>{item.title}</Link>
-            </li>
-          ))}
-        </ul>
       </div>
     </>
   );
