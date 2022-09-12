@@ -121,7 +121,7 @@ function Header({ changeColor }) {
                 <ul className="justify-center lg:flex">
                   {data.map((item, index) => (
                     <li
-                      className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
+                      className="mx-1 text-sm font-bold lg:text-base lg:mx-2 whitespace-nowrap"
                       key={index}
                     >
                       <Link href={item.url}>{item.title}</Link>
