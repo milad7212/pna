@@ -143,6 +143,15 @@ function Header({ changeColor }) {
           showSlideMenu ? "fixed " : "hidden"
         } bg-[#cbe6ff] z-[100]`}
       >
+        <div className="flex justify-center py-6">
+          <Image
+            src="/logo-roydad.png"
+            layout="fixed"
+            width={70}
+            height={70}
+            alt=""
+          />
+        </div>
         <ul className="">
           {dataMobile.map((item, index) => (
             <li
