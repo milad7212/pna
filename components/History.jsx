@@ -15,19 +15,7 @@ function History() {
         </div>
       </div>
       <div className="grid grid-cols-1 px-3 bg-cover md:grid-cols-2">
-        <div className="flex items-center justify-center gap-2 ">
-          <Item color="#ba1a1a" />
-
-          <div className="">
-            <Item color="#0e92d8" />
-            <div className="h-2"></div>
-            <Item color="#19408f" />
-          </div>
-          <div className="">
-            <Item color="#5195af" />
-          </div>
-        </div>
-        <div className="">
+        <div className="text-white">
           <Image src="/icon.png" layout="fixed" height={50} width={50} alt="" />
           <p className="font-bold">دوره های پیشین</p>
           <div className="flex flex-col max-w-max ">
@@ -41,6 +29,18 @@ function History() {
             >
               دیدن همه
             </button>
+          </div>
+        </div>
+        <div className="flex items-center justify-center gap-2 ">
+          <Item color="#ba1a1a" />
+
+          <div className="">
+            <Item color="#0e92d8" />
+            <div className="h-2"></div>
+            <Item color="#19408f" />
+          </div>
+          <div className="">
+            <Item color="#5195af" />
           </div>
         </div>
       </div>
