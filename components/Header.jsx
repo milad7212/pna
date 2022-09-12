@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 const data = [
   {
@@ -32,57 +33,132 @@ const data = [
     url: "/clips",
   },
 ];
+const dataMobile = [
+  {
+    title: "صفحه اصلی",
+    url: "",
+  },
+  {
+    title: "اطلاعات رویداد",
+    url: "",
+  },
+  {
+    title: "پخش زنده",
+    url: "",
+  },
+  {
+    title: "دوره های پیشین",
+    url: "/last",
+  },
+  {
+    title: "برگزار کنندگان",
+    url: "",
+  },
+  {
+    title: "حامیان",
+    url: "",
+  },
+  {
+    title: "گالری",
+    url: "/galery",
+  },
+  {
+    title: "کلیپ ها",
+    url: "/clips",
+  },
+  {
+    title: "تماس با ما",
+    url: "/clips",
+  },
+  {
+    title: "درباره ما",
+    url: "/clips",
+  },
+  {
+    title: "FAQ",
+    url: "/clips",
+  },
+];
 
 function Header({ changeColor }) {
+  const [showSlideMenu, setShowSlideMenu] = useState(false);
+  const router = useRouter();
   return (
-    <div
-      className={`${
-        !changeColor ? "bg-blue-500" : "bg-[#031B31]"
-      } py-2 sticky top-0 z-50`}
-    >
-      <div className="mx-auto max-w-7xl ">
-        <div className="px-3 ">
-          <div className="flex items-center justify-between gap-2">
-            <div className="block lg:hidden">
-              <HiMenu size={35} color="#fff" />
-            </div>
-            <Link href="/">
-              <div className="flex items-center justify-center cursor-pointer ">
-                <Image
-                  src="/logo-roydad.png"
-                  layout="fixed"
-                  width={70}
-                  height={70}
-                  alt=""
-                />
-                <Image
-                  src="/logo-roydader.png"
-                  layout="fixed"
-                  width={100}
-                  height={50}
-                  alt=""
-                />
+    <>
+      <div
+        className={`${
+          !changeColor ? "bg-blue-500" : "bg-[#031B31]"
+        } py-2 sticky top-0 z-50`}
+      >
+        <div className="mx-auto max-w-7xl ">
+          <div className="px-3 ">
+            <div className="flex items-center justify-between gap-2">
+              <div
+                onClick={() => setShowSlideMenu(true)}
+                className="block cursor-pointer lg:hidden"
+              >
+                <HiMenu size={35} color="#fff" />
               </div>
-            </Link>
-            <div className="hidden text-white grow lg:block">
-              <ul className="justify-center lg:flex">
-                {data.map((item, index) => (
-                  <li
-                    className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
-                    key={index}
-                  >
-                    <Link href={item.url}>{item.title}</Link>
-                  </li>
-                ))}
-              </ul>
+              <Link href="/">
+                <div className="flex items-center justify-center cursor-pointer ">
+                  <Image
+                    src="/logo-roydad.png"
+                    layout="fixed"
+                    width={70}
+                    height={70}
+                    alt=""
+                  />
+                  <Image
+                    src="/logo-roydader.png"
+                    layout="fixed"
+                    width={100}
+                    height={50}
+                    alt=""
+                  />
+                </div>
+              </Link>
+              <div className="hidden text-white grow lg:block">
+                <ul className="justify-center lg:flex">
+                  {data.map((item, index) => (
+                    <li
+                      className="mx-2 text-sm font-bold lg:text-base lg:mx-6 whitespace-nowrap"
+                      key={index}
+                    >
+                      <Link href={item.url}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md opacity-0 lg:opacity-100 whitespace-nowrap hover:scale-105 active:scale-90 ">
+                ثبت نام
+              </button>
             </div>
-            <button className="px-6 py-2 font-bold text-white transition-all duration-200 ease-in-out bg-blue-600 rounded-md opacity-0 lg:opacity-100 whitespace-nowrap hover:scale-105 active:scale-90 ">
-              ثبت نام
-            </button>
           </div>
         </div>
       </div>
-    </div>
+
+      {/* menu */}
+      <div
+        className={`inset-0 ${
+          showSlideMenu ? "fixed " : "hidden"
+        } bg-[#cbe6ff] z-[100]`}
+      >
+        <ul className="">
+          {dataMobile.map((item, index) => (
+            <li
+              onClick={() => {
+                router.push(item.url);
+                setShowSlideMenu(false);
+              }}
+              className="py-4 mx-2 text-sm font-bold border-[#036697] border-t border-b lg:text-base lg:mx-6 whitespace-nowrap"
+              key={index}
+            >
+              <Link href={item.url}>{item.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
 
