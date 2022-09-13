@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -15,7 +15,25 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Image from "next/image";
+
+import { http } from "../services/api";
 function ImageSlide() {
+  useEffect(() => {
+    async function fetchData() {
+      const response = await http.get(
+        " https://event.bsjmajazi.ir/api/gallery/photos/",
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("response :>> ", response);
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <div className="max-w-5xl mx-auto my-8 ">
       <Swiper
