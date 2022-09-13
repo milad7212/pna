@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { http } from "../services/api";
 function Videos() {
   const [videos, setVideos] = useState([]);
+  const [indexVideo, setIndexVideo] = useState(0);
   useEffect(() => {
     async function fetchData() {
       const response = await http.get(
@@ -16,7 +17,6 @@ function Videos() {
       if (response.status < 400) {
         setVideos(response.data);
       }
-      console.log("response :>> ", response);
     }
 
     fetchData();
@@ -28,17 +28,21 @@ function Videos() {
           <p className="my-8 text-xl font-bold">پخش زنده / کلیپ ها</p>
           {videos.map((item, index) => (
             <>
-              <Item data={item} />
+              <Item
+                data={item}
+                whichVideo={index}
+                setIndexVideo={setIndexVideo}
+              />
             </>
           ))}
         </div>
         <div className=" w-[70%]  mx-auto rounded-lg shadow-md">
-          {videos[0]?.video && (
+          {videos[indexVideo]?.video && (
             <video
               controls
               className="aspect-square"
               type="video/mp4"
-              src={videos[0]?.video}
+              src={videos[indexVideo]?.video}
             ></video>
           )}
         </div>
@@ -49,9 +53,12 @@ function Videos() {
 
 export default Videos;
 
-function Item({ data }) {
+function Item({ data, whichVideo, setIndexVideo }) {
   return (
-    <div className="grid   grid-cols-[50px_1fr_80px_100px] bg-gray-400 my-2 rounded-xl p-2">
+    <div
+      onClick={() => setIndexVideo(whichVideo)}
+      className=" grid cursor-pointer hover:bg-gray-500  grid-cols-[50px_1fr_80px_100px] bg-gray-400 my-2 rounded-xl p-2"
+    >
       <div className="">
         <Image src={data.icon} layout="fixed" width={50} height={50} alt="" />
       </div>
