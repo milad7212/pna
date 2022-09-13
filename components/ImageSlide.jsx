@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -18,6 +18,7 @@ import Image from "next/image";
 
 import { http } from "../services/api";
 function ImageSlide() {
+  const [images, setImages] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const response = await http.get(
@@ -28,6 +29,9 @@ function ImageSlide() {
           },
         }
       );
+      if (response.status < 400) {
+        setImages(response.data);
+      }
       console.log("response :>> ", response);
     }
 
@@ -54,56 +58,18 @@ function ImageSlide() {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>
-          <Image
-            className="rounded-xl"
-            src="/test.jpg"
-            layout="responsive"
-            height={300}
-            width={300}
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="rounded-xl"
-            src="/test.jpg"
-            layout="responsive"
-            height={300}
-            width={300}
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="rounded-xl"
-            src="/test.jpg"
-            layout="responsive"
-            height={300}
-            width={300}
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="rounded-xl"
-            src="/test.jpg"
-            layout="responsive"
-            height={300}
-            width={300}
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            className="rounded-xl"
-            src="/test.jpg"
-            layout="responsive"
-            height={300}
-            width={300}
-            alt=""
-          />
-        </SwiperSlide>
+        {images.map((item, index) => (
+          <SwiperSlide key={index}>
+            <Image
+              className="rounded-xl"
+              src={item.image}
+              layout="responsive"
+              height={300}
+              width={300}
+              alt=""
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

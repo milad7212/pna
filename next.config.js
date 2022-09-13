@@ -2,6 +2,10 @@
 const nextConfig = {
     reactStrictMode: false,
     swcMinify: true,
-}
 
-module.exports = nextConfig
+    images: {
+        domains: ["event.bsjmajazi.ir"],
+    },
+};
+
+module.exports = nextConfig;
