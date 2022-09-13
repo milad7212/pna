@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MdTimer } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
+import { useCountdown } from "../utils/useCountdown";
 const imageAnimat = {
   offscreen: { opacity: 0, y: -100 },
   onscreen: {
@@ -17,6 +18,7 @@ const imageAnimat = {
   },
 };
 function Information() {
+  const [days, hours, minutes, seconds] = useCountdown(new Date(2022, 10, 10));
   return (
     <motion.div
       initial={"offscreen"}
@@ -45,7 +47,30 @@ function Information() {
             در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
             می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
           </p>
-          <div className=""></div>
+          <div className="flex flex-col items-center justify-center">
+            <p className="mb-8 font-bold text-blue-800">
+              فرصت باقی مانده تا آغاز رویداد
+            </p>
+            <div className="flex justify-center ">
+              <DateTimeDisplay
+                value={seconds}
+                type={"ثانیه"}
+                isDanger={false}
+              />
+
+              <p>:</p>
+              <DateTimeDisplay
+                value={minutes}
+                type={"دقیقه"}
+                isDanger={false}
+              />
+
+              <p>:</p>
+              <DateTimeDisplay value={hours} type={"ساعت"} isDanger={false} />
+              <p>:</p>
+              <DateTimeDisplay value={days} type={"روز"} isDanger={days <= 3} />
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
@@ -83,3 +108,12 @@ function Information() {
 }
 
 export default Information;
+
+const DateTimeDisplay = ({ value, type, isDanger }) => {
+  return (
+    <div className="flex flex-col items-center mx-1 font-bold text-blue-800">
+      <p>{value}</p>
+      <span>{type}</span>
+    </div>
+  );
+};
