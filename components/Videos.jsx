@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { http } from "../services/api";
+import { BsCollectionPlay } from "react-icons/bs";
 function Videos() {
   const [videos, setVideos] = useState([]);
   const [indexVideo, setIndexVideo] = useState(0);
@@ -26,6 +27,11 @@ function Videos() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div className="">
           <p className="my-8 text-xl font-bold">پخش زنده / کلیپ ها</p>
+          <div className=" grid cursor-pointer border-b mb-2  grid-cols-[50px_1fr_80px_100px] hover:bg-blue-300 border-blue-400 my-2  p-2">
+            <BsCollectionPlay size={25} />
+            <p>پخش زنده</p>
+            <p className="whitespace-nowrap">زنده از مکان برگزاری</p>
+          </div>
           {videos.map((item, index) => (
             <>
               <Item
