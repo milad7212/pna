@@ -17,7 +17,7 @@ const imageAnimat = {
 };
 function Roles() {
   return (
-    <div className="mx-auto my-16 max-w-7xl">
+    <div className="mx-auto  max-w-7xl">
       <div className="relative border-t-2 border-indigo-200 ">
         <div className="absolute inset-0 flex justify-center -top-5">
           <p className="px-4 text-2xl font-bold bg-white text-cyan-600">
