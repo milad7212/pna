@@ -147,7 +147,7 @@ function Header({ changeColor }) {
                   ))}
                 </ul>
               </div>
-              <button className="px-6 py-2 font-bold text-[#003450] transition-all duration-200 ease-in-out bg-[#8fcdff] rounded-md opacity-0 lg:opacity-100 whitespace-nowrap hover:scale-105 active:scale-90 ">
+              <button className="px-6 py-2 font-bold text-[#003450] transition-all duration-200 ease-in-out bg-[#8fcdff] rounded-md opacity-0 w-[35px] lg:w-auto lg:opacity-100 whitespace-nowrap hover:scale-105 active:scale-90 ">
                 ثبت نام
               </button>
             </div>
