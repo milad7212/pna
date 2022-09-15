@@ -10,14 +10,19 @@ function galery() {
       <ImageSlide />
       <div className="max-w-6xl px-4 mx-auto mb-8">
         <LineTitle title="همه تصاویر" />
+        <div className="grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-2 ">
+          <div className="">
+            <PartImages />
 
-        <PartImages />
+            <PartImagesTwo />
+          </div>
 
-        <PartImagesTwo />
+          <div className="">
+            <PartImages />
 
-        <PartImages />
-
-        <PartImagesTwo />
+            <PartImagesTwo />
+          </div>
+        </div>
       </div>
     </div>
   );
