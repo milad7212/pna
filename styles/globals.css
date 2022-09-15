@@ -28,6 +28,7 @@ body {
     margin: 0;
     direction: rtl;
     font-family: "Aria";
+    scroll-behavior: smooth;
 }
 
 a {

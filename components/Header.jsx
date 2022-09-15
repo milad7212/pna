@@ -17,7 +17,7 @@ const data = [
   },
   {
     title: "پخش زنده",
-    url: "",
+    url: "/#live",
   },
   {
     title: "دوره های پیشین",
@@ -25,11 +25,11 @@ const data = [
   },
   {
     title: "برگزار کنندگان",
-    url: "",
+    url: "/#Organizer",
   },
   {
     title: "حامیان",
-    url: "",
+    url: "/#supporters",
   },
   {
     title: "گالری",
