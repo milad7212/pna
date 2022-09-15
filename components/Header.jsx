@@ -51,26 +51,26 @@ const dataMobile = [
     url: "/roles",
     icon: <MdPermDeviceInformation size={20} />,
   },
-  {
-    title: "پخش زنده",
-    url: "",
-    icon: <MdLiveTv size={20} />,
-  },
+  // {
+  //   title: "پخش زنده",
+  //   url: "",
+  //   icon: <MdLiveTv size={20} />,
+  // },
   {
     title: "دوره های پیشین",
     url: "/last",
     icon: <FaRegCalendarCheck size={20} />,
   },
-  {
-    title: "برگزار کنندگان",
-    url: "",
-    icon: <RiHomeSmileLine size={20} />,
-  },
-  {
-    title: "حامیان",
-    url: "",
-    icon: <AiFillLike size={20} />,
-  },
+  // {
+  //   title: "برگزار کنندگان",
+  //   url: "",
+  //   icon: <RiHomeSmileLine size={20} />,
+  // },
+  // {
+  //   title: "حامیان",
+  //   url: "",
+  //   icon: <AiFillLike size={20} />,
+  // },
   {
     title: "گالری",
     url: "/galery",
