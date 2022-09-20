@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="411.529" height="951.292" viewBox="0 0 411.529 951.292">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.02" y1="0.263" x2="0.98" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5db3f1"/>
+      <stop offset="0.163" stop-color="#52a1da"/>
+      <stop offset="0.473" stop-color="#205273"/>
+      <stop offset="1" stop-color="#001e30"/>
+    </linearGradient>
+    <filter id="Rectangle_720" x="5.529" y="299.797" width="202" height="237" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_721" x="187.529" y="299.797" width="202" height="237" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_723" x="5.529" y="524.797" width="202" height="237" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_721-2" x="187.529" y="524.797" width="202" height="236" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-4"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2117" data-name="Group 2117" transform="translate(-16.471 -4902.203)">
+    <g id="Group_2067" data-name="Group 2067" transform="translate(-231.449 -355)">
+      <path id="Path_7239" data-name="Path 7239" d="M9696.516,4787.122l-355.554-217.737a63.122,63.122,0,0,1-15.856-22.865c-5.843-14.48-8.832-35.953-8.832-35.953L9284.988,4105.5s-.2-21.947,3.424-35.239A60.284,60.284,0,0,1,9300,4048.063l396.477-212.234Z" transform="translate(-9037.066 1421.373)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_2016" data-name="Group 2016" transform="translate(-1068.001 -2031)">
+      <g transform="matrix(1, 0, 0, 1, 1084.47, 6933.2)" filter="url(#Rectangle_720)">
+        <rect id="Rectangle_720-2" data-name="Rectangle 720" width="172" height="207" rx="22" transform="translate(20.53 311.8)" fill="#ba1a1a"/>
+      </g>
+      <text id="اولین_دوره_مسابقات" data-name="اولین دوره مسابقات" transform="translate(1125.001 7366)" fill="#fefeff" font-size="16" font-family="IRANYekanMobile-Bold, IRANYekanMobile" font-weight="700"><tspan x="0" y="0">اولین دوره مسابقات</tspan></text>
+      <text id="_استانی_" data-name="(استانی)" transform="translate(1167.001 7415)" fill="#fefeff" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">(</tspan><tspan y="0" font-family="IRANYekanMobile-Bold, IRANYekanMobile">استانی</tspan><tspan y="0">)</tspan></text>
+      <text id="_98" data-name="98" transform="translate(1229.001 7322)" fill="#fff" font-size="64" font-family="Fekrah-Regular, Fekrah"><tspan x="-76.16" y="0">98</tspan></text>
+    </g>
+    <g id="Group_2015" data-name="Group 2015" transform="translate(-1183.001 -1935)">
+      <g transform="matrix(1, 0, 0, 1, 1199.47, 6837.2)" filter="url(#Rectangle_721)">
+        <rect id="Rectangle_721-3" data-name="Rectangle 721" width="172" height="207" rx="22" transform="translate(202.53 311.8)" fill="#5195af"/>
+      </g>
+      <text id="دومین_دوره_مسابقات" data-name="دومین دوره مسابقات" transform="translate(1420.001 7277)" fill="#fff" font-size="16" font-family="IRANYekanMobile-Bold, IRANYekanMobile" font-weight="700"><tspan x="0" y="0">دومین دوره مسابقات</tspan></text>
+      <text id="_استانی_و_کشوری_" data-name="(استانی و کشوری)" transform="translate(1438.001 7321)" fill="#fff" font-size="14" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">(</tspan><tspan y="0" font-family="IRANYekanMobile-Bold, IRANYekanMobile">استانی و کشوری</tspan><tspan y="0">)</tspan></text>
+      <text id="_99" data-name="99" transform="translate(1527.001 7221)" fill="#fefeff" font-size="61" font-family="Fekrah-Regular, Fekrah"><tspan x="-75.166" y="0">99</tspan></text>
+    </g>
+    <g id="Group_2014" data-name="Group 2014" transform="translate(-1656.001 -1806)">
+      <g transform="matrix(1, 0, 0, 1, 1672.47, 6708.2)" filter="url(#Rectangle_723)">
+        <rect id="Rectangle_723-2" data-name="Rectangle 723" width="172" height="207" rx="22" transform="translate(20.53 536.8)" fill="#19408f"/>
+      </g>
+      <text id="سومین_دوره_مسابقات" data-name="سومین دوره مسابقات" transform="translate(1708.001 7366)" fill="#fefeff" font-size="16" font-family="IRANYekanMobile-Bold, IRANYekanMobile" font-weight="700"><tspan x="0" y="0">سومین دوره مسابقات</tspan></text>
+      <text id="_استانی_و_کشوری_2" data-name="(استانی و کشوری)" transform="translate(1734.001 7417)" fill="#fefeff" font-size="12" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">(</tspan><tspan y="0" font-family="IRANYekanMobile-Bold, IRANYekanMobile">استانی و کشوری</tspan><tspan y="0">)</tspan></text>
+      <text id="_1400" data-name="1400" transform="translate(1819.001 7313)" fill="#fefeff" font-size="61" font-family="Fekrah-Regular, Fekrah"><tspan x="-75.335" y="0">1400</tspan></text>
+    </g>
+    <g id="Group_2019" data-name="Group 2019" transform="translate(219 5439)">
+      <g transform="matrix(1, 0, 0, 1, -202.53, -536.8)" filter="url(#Rectangle_721-2)">
+        <rect id="Rectangle_721-4" data-name="Rectangle 721" width="172" height="206" rx="22" transform="translate(202.53 536.8)" fill="#006a69"/>
+      </g>
+      <text id="چهارمین_دوره_مسابقات" data-name="چهارمین دوره مسابقات" transform="translate(10 115)" fill="#fff" font-size="16" font-family="IRANYekanMobile-Bold, IRANYekanMobile" font-weight="700"><tspan x="0" y="0">چهارمین دوره مسابقات</tspan></text>
+      <text id="_1401" data-name="1401" transform="translate(125 72)" fill="#fefeff" font-size="61" font-family="Fekrah-Regular, Fekrah"><tspan x="-79.469" y="0">1401</tspan></text>
+    </g>
+    <g id="Group_2020" data-name="Group 2020" transform="translate(258.506 5590)">
+      <rect id="Rectangle_725" data-name="Rectangle 725" width="92" height="38" rx="19" transform="translate(0.494)" fill="#d0bfe7"/>
+      <text id="ثبت_نام" data-name="ثبت نام" transform="translate(26.494 22)" fill="#362b4a" font-size="13" font-family="IRANYekanMobile-Bold, IRANYekanMobile" font-weight="700"><tspan x="0" y="0">ثبت نام</tspan></text>
+    </g>
+  </g>
+</svg>

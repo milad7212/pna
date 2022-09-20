@@ -17,7 +17,7 @@ const imageAnimat = {
 };
 function Roles() {
   return (
-    <div className="mx-auto  max-w-7xl">
+    <div className="mx-auto max-w-7xl">
       <div className="relative border-t-2 border-indigo-200 ">
         <div className="absolute inset-0 flex justify-center -top-5">
           <p className="px-4 text-2xl font-bold bg-white text-cyan-600">
@@ -26,16 +26,29 @@ function Roles() {
         </div>
       </div>
 
-      <Item img="/one.svg" />
-      <Item revers img="/two.svg" />
-      <Item img="/three.svg" />
+      <Item
+        img="/one.svg"
+        text="میتوان متن متغییر وارد نمود"
+        title="عنوان متغییر"
+      />
+      <Item
+        revers
+        img="/two.svg"
+        text="میتوان متن متغییر وارد نمود"
+        title="عنوان متغییر"
+      />
+      <Item
+        img="/three.svg"
+        text="میتوان متن متغییر وارد نمود"
+        title="عنوان متغییر"
+      />
     </div>
   );
 }
 
 export default Roles;
 
-function Item({ revers, img }) {
+function Item({ revers, img, text, title }) {
   const route = useRouter();
   return (
     <motion.div
@@ -47,20 +60,8 @@ function Item({ revers, img }) {
       className="grid grid-cols-1 gap-2 px-3 my-16 md:grid-cols-2"
     >
       <div className={`flex flex-col ${revers && "order-1 md:order-2"} `}>
-        <p className="mb-6 text-xl font-bold text-amber-900">
-          نرم افزار موبایل
-        </p>
-        <p className="text-justify md:leading-loose">
-          لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
-          بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
-          گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و
-          ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا
-          از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا
-          طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی
-          استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه
-          طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
-          می‌رسد ه‌است.
-        </p>
+        <p className="mb-6 text-xl font-bold text-amber-900">{title}</p>
+        <p className="text-justify md:leading-loose">{text}</p>
         <button
           onClick={() => {
             route.push("/roles");
