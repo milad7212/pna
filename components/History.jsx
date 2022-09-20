@@ -31,7 +31,7 @@ function History() {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2 ">
+        <div className="relative flex items-center justify-center gap-2 h-[500px] ">
           <Item color="#ba1a1a" />
 
           <div className="">
