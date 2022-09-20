@@ -31,7 +31,7 @@ function Information() {
       <div className="grid grid-cols-1 gap-y-20 gap-x-1 md:grid-cols-2 my-28">
         <motion.div
           variants={imageAnimat}
-          className="relative grid grid-cols-2 p-3 py-12 shadow-2xl md:p-8 rounded-xl backdrop-blur-md"
+          className="relative grid grid-cols-1 p-3 py-12 shadow-2xl gap-y-2 md:grid-cols-2 md:p-8 rounded-xl backdrop-blur-md"
         >
           <div className="absolute flex px-4 py-2 bg-[#d0bfe7] rounded-full shadow-md left-[45%]  -top-5">
             <span className="inline-block">
@@ -48,7 +48,7 @@ function Information() {
             می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
           </p>
           <div className="flex flex-col items-center justify-center">
-            <p className="mb-8 font-bold text-blue-800">
+            <p className="mb-8 text-sm font-bold text-blue-800 md:text-base">
               فرصت باقی مانده تا آغاز رویداد
             </p>
             <div className="flex justify-center ">
